@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-91dp"
+        tools:layout_editor_absoluteY="-76dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:id="@+id/hermoine"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hermoine"
+                app:layout_constraintLeft_toLeftOf="@id/guideline1"
+                app:layout_constraintRight_toRightOf="@id/guideline2"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Hermoine"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/hermoine"
+                app:layout_constraintLeft_toRightOf="@id/hermoine"
+                app:layout_constraintTop_toTopOf="@id/hermoine" />
+
+            <ImageView
+                android:id="@+id/harry"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/harry"
+                app:layout_constraintLeft_toLeftOf="@id/hermoine"
+                app:layout_constraintTop_toBottomOf="@id/hermoine"
+                app:layout_constraintRight_toRightOf="@id/hermoine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Harry"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/harry"
+                app:layout_constraintLeft_toRightOf="@id/harry"
+                app:layout_constraintTop_toTopOf="@id/harry" />
+
+            <ImageView
+                android:id="@+id/ron"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ron"
+                app:layout_constraintLeft_toLeftOf="@id/hermoine"
+                app:layout_constraintTop_toBottomOf="@id/harry"
+                app:layout_constraintRight_toRightOf="@id/hermoine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Ron"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/ron"
+                app:layout_constraintLeft_toRightOf="@id/ron"
+                app:layout_constraintTop_toTopOf="@id/ron" />
+
+            <ImageView
+                android:id="@+id/voldemort"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/voldemort"
+                app:layout_constraintLeft_toLeftOf="@id/hermoine"
+                app:layout_constraintTop_toBottomOf="@id/ron"
+                app:layout_constraintRight_toRightOf="@id/hermoine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Voldermort"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/voldemort"
+                app:layout_constraintLeft_toRightOf="@id/voldemort"
+                app:layout_constraintTop_toTopOf="@id/voldemort" />
+
+            <ImageView
+                android:id="@+id/snape"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/snape"
+                app:layout_constraintLeft_toLeftOf="@id/hermoine"
+                app:layout_constraintTop_toBottomOf="@id/voldemort"
+                app:layout_constraintRight_toRightOf="@id/hermoine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Snape"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/snape"
+                app:layout_constraintLeft_toRightOf="@id/snape"
+                app:layout_constraintTop_toTopOf="@id/snape" />
+
+            <ImageView
+                android:id="@+id/draco"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/draco"
+                app:layout_constraintLeft_toLeftOf="@id/hermoine"
+                app:layout_constraintTop_toBottomOf="@id/snape"
+                app:layout_constraintRight_toRightOf="@id/hermoine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Draco"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/draco"
+                app:layout_constraintLeft_toRightOf="@id/draco"
+                app:layout_constraintTop_toTopOf="@id/draco" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="5dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.37" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
